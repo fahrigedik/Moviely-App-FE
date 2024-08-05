@@ -4,11 +4,9 @@
 }
 
 .movie-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:15px;
     background-color: #2C394B;
-
-
+    padding:15px;
 }

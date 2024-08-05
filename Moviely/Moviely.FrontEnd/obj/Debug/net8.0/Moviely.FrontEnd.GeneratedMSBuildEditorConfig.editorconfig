@@ -42,6 +42,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fahri/OneDrive/Masaüstü/Blazor FrontEnd Movie App/Moviely-App-FE/Moviely/Moviely.FrontEnd/Components/Components/MovieCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXE1vdmllQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-jqw3ygfm0j
+
 [C:/Users/fahri/OneDrive/Masaüstü/Blazor FrontEnd Movie App/Moviely-App-FE/Moviely/Moviely.FrontEnd/Components/Components/MovieSection.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXE1vdmllU2VjdGlvbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-ceopc7ylr9

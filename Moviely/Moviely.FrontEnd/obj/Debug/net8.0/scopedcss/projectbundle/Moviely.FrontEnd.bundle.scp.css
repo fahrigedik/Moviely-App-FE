@@ -1,3 +1,42 @@
+/* _content/Moviely.FrontEnd/Components/Components/MovieCard.razor.rz.scp.css */
+
+.movie-card[b-jqw3ygfm0j] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: #d3ecff;
+    
+    padding:20px;
+    border-radius:10px;
+}
+
+
+.text-container[b-jqw3ygfm0j]{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+   
+    
+}
+
+.mc-image[b-jqw3ygfm0j]{
+    width:150px;
+    height:240px;
+}
+
+.mc-title[b-jqw3ygfm0j] {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    color: #1E1E1E;
+}
+.mc-description[b-jqw3ygfm0j] {
+    font-size: 12px;
+    margin: 0;
+    color: #757575;
+}
 /* _content/Moviely.FrontEnd/Components/Components/MovieSection.razor.rz.scp.css */
 *[b-ceopc7ylr9]{
     margin: 0;
@@ -5,8 +44,11 @@
 }
 
 .movie-container[b-ceopc7ylr9] {
-    display : flex
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:15px;
+    background-color: #2C394B;
+    padding:15px;
 }
 /* _content/Moviely.FrontEnd/Components/Layout/MainLayout.razor.rz.scp.css */
 *[b-vvry4hzjgk]{
@@ -162,9 +204,11 @@
     padding : 0;
 }
 
-.container[b-87qox9kx10]{
+.home-container[b-87qox9kx10]{
+    margin:0;
     display :flex;
     flex-direction : column;
     align-items:center;
     justify-content:center;
+    /*width:100vw;*/
 }

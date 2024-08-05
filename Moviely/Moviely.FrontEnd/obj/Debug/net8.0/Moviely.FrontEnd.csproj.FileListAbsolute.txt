@@ -31,3 +31,4 @@ C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Movi
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Layout\Navbar.razor.rz.scp.css
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Components\MovieSection.razor.rz.scp.css
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Pages\Home.razor.rz.scp.css
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Components\MovieCard.razor.rz.scp.css

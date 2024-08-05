@@ -4,6 +4,9 @@
 }
 
 .movie-container[b-ceopc7ylr9] {
-    display : flex
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap:15px;
+    background-color: #2C394B;
+    padding:15px;
 }
