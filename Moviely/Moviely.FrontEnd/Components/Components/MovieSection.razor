@@ -1,9 +1,16 @@
 ﻿@using Moviely.FrontEnd.Services
 @rendermode InteractiveServer
+@inject  TMBDClient Client
 
 
+@if (popularData == null)
+{
+    <h1>Loading Data</h1>
+}
 
+else{
 <div class="movie-container">
+
     <MovieCard></MovieCard>
     <MovieCard></MovieCard>
     <MovieCard></MovieCard>
@@ -11,4 +18,6 @@
     <MovieCard></MovieCard>
     <MovieCard></MovieCard>
     <MovieCard></MovieCard>
+
 </div>
+}

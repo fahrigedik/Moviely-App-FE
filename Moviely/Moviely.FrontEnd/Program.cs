@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-
+builder.Services.AddHttpClient();
 builder.Services.AddScoped(sp =>
 {
     // Get the base address from configuration (recommended)
@@ -22,7 +22,8 @@ builder.Services.AddScoped(sp =>
     // Create the HttpClient instance with the validated base address
     return new HttpClient { BaseAddress = new Uri(baseAddress) };
 }); 
-builder.Services.AddScoped<TMBDClient>();
+builder.Services.AddTransient<TMBDClient>();
+
 
 
 var app = builder.Build();
