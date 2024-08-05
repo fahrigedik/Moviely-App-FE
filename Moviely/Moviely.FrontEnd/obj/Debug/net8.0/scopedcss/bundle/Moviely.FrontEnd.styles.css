@@ -1,3 +1,17 @@
+/* _content/Moviely.FrontEnd/Components/Components/CommentCard.razor.rz.scp.css */
+/* _content/Moviely.FrontEnd/Components/Components/CommentSection.razor.rz.scp.css */
+
+*[b-apukso9sfa]{
+    margin:0;
+    padding:0;
+}
+
+.comment-container[b-apukso9sfa]{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    background-color :#D3ECFF;
+    gap:10px;
+}
 /* _content/Moviely.FrontEnd/Components/Components/MovieCard.razor.rz.scp.css */
 
 .movie-card[b-jqw3ygfm0j] {
@@ -50,6 +64,8 @@
     background-color: #2C394B;
     padding:15px;
 }
+
+    
 /* _content/Moviely.FrontEnd/Components/Layout/MainLayout.razor.rz.scp.css */
 *[b-vvry4hzjgk]{
     margin : 0;

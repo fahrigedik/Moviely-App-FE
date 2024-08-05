@@ -42,6 +42,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/fahri/OneDrive/Masaüstü/Blazor FrontEnd Movie App/Moviely-App-FE/Moviely/Moviely.FrontEnd/Components/Components/CommentCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXENvbW1lbnRDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-v7wk3o6l5b
+
+[C:/Users/fahri/OneDrive/Masaüstü/Blazor FrontEnd Movie App/Moviely-App-FE/Moviely/Moviely.FrontEnd/Components/Components/CommentSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXENvbW1lbnRTZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-apukso9sfa
+
 [C:/Users/fahri/OneDrive/Masaüstü/Blazor FrontEnd Movie App/Moviely-App-FE/Moviely/Moviely.FrontEnd/Components/Components/MovieCard.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXE1vdmllQ2FyZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = b-jqw3ygfm0j

@@ -7,9 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Components\Components\CommentCard.razor.css" />
     <Content Remove="Components\Components\MovieCard.razor.css" />
     <Content Remove="Components\Layout\Navbar.razor.css" />
 
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Components\Components\CommentCard.razor.css" />
+    <None Remove="Components\Components\CommentSection.razor.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,17 +23,28 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <_ContentIncludedByDefault Remove="Components\Components\CommentCard.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Components\MovieCard.razor" />
 	  <_ContentIncludedByDefault Remove="Components\Layout\Navbar.razor" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Components\Components\CommentCard.razor" />
     <None Include="Components\Components\MovieCard.razor" />
     <None Include="Components\Layout\Navbar.razor" />
   </ItemGroup>
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Components\Components\MovieCard.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Components\Components\CommentCard.razor.css" />
+    <Content Include="Components\Components\CommentSection.razor.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Components\Components\CommentCard.razor" />
   </ItemGroup>
 
 

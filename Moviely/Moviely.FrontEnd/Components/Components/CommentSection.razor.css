@@ -1,0 +1,12 @@
+﻿
+*{
+    margin:0;
+    padding:0;
+}
+
+.comment-container{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    background-color :#D3ECFF;
+    gap:10px;
+}
