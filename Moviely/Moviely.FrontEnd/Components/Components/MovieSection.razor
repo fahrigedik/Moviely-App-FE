@@ -1,23 +1,26 @@
 ﻿@using Moviely.FrontEnd.Services
 @rendermode InteractiveServer
-@inject  TMBDClient Client
+@attribute [StreamRendering(true)]
 
 
-@if (popularData == null)
+
+@if (_movieService == null)
 {
-    <h1>Loading Data</h1>
+    <h1> Loading Data </h1>
 }
+else {
 
-else{
-<div class="movie-container">
-
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-    <MovieCard></MovieCard>
-
-</div>
+    <div class="movie-container">
+        @if (popularData == null)
+        {
+            <h1>"Loading Popular Data"</h1>
+        }
+        else
+        {
+            @foreach (var item in popularData.Results)
+            {
+                <MovieCard PopularMovieData="item"></MovieCard>
+            }
+        }
+    </div>
 }

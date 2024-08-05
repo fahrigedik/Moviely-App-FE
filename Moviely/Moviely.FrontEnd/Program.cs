@@ -23,6 +23,7 @@ builder.Services.AddScoped(sp =>
     return new HttpClient { BaseAddress = new Uri(baseAddress) };
 }); 
 builder.Services.AddTransient<TMBDClient>();
+builder.Services.AddScoped<IMovieService, MovieService>();
 
 
 

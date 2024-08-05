@@ -1,10 +1,13 @@
-﻿
+﻿@rendermode InteractiveServer
+@attribute [StreamRendering(true)]
+
+
 <div class="movie-card">
     <div class="image-container">
-        <img class="mc-image" src="https://wallpapercat.com/w/full/0/e/f/277545-1536x2733-iphone-hd-cars-disney-wallpaper-photo.jpg" />
+        <img class="mc-image" src="@($"https://image.tmdb.org/t/p/w500/{PopularMovieData.PosterPath}")" />
     </div>
     <div class="text-container">
-        <h3 class="mc-title">Cars</h3>
-        <h4 class="mc-description">Body Text</h4>
+        <h3 class="mc-title">@PopularMovieData.Title</h3>
+        <h4 class="mc-description">@PopularMovieData.Overview</h4>
     </div>
 </div>
