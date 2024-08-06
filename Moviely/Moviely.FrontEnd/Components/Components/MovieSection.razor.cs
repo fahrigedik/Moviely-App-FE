@@ -1,44 +1,15 @@
 ﻿using BlazorMovieLive.Models;
 using Microsoft.AspNetCore.Components;
 using Moviely.FrontEnd.Services;
+using System.Runtime.InteropServices;
 
 namespace Moviely.FrontEnd.Components.Components
 {
-    
+
     public partial class MovieSection
     {
-        // public PopularMoviePagedResponse popularData { get; set; }
 
-
-        /*    public MovieSection()
-            {
-                GetPopularData();
-            }
-
-
-            public async Task GetPopularData()
-            {
-                popularData = await TMBD.GetPopularMoviesAsync();
-            }
-        */
-        /*   public PopularMoviePagedResponse popularData { get; set; }
-
-           protected override async Task OnInitializedAsync()
-           {
-               if (Client == null)
-               {
-                   throw new InvalidOperationException("TMDBClient is not injected properly.");
-               }
-
-               await GetPopularData();
-           }
-
-           private async Task GetPopularData()
-           {
-               popularData = await Client.GetPopularMoviesAsync();
-           }
-
-           */
+        //Inject Service
 
         [Inject]
         protected IMovieService _movieService { get; set; }
@@ -47,17 +18,49 @@ namespace Moviely.FrontEnd.Components.Components
 
         private async Task GetPopularData()
         {
-            popularData = await _movieService.GetPopularMoviesAsync();
+        }       
+
+        public MovieSection()
+        {
         }
 
         protected override async Task OnInitializedAsync()
         {
-            if (_movieService == null)
-            {
-                throw new InvalidOperationException("TMDBClient is not injected properly.");
-            }
-            await GetPopularData();
+           
+           // await fillNestedPaginationList();
+
+            
         }
+        protected override async Task OnAfterRenderAsync(bool firstRender)
+        {
+            popularData = await _movieService.GetPopularMoviesAsync();
+            if (firstRender)
+            {
+                await fillNestedPaginationList();
+                StateHasChanged(); // İlk render tamamlandıktan sonra durumu güncelleyin
+            }
+        }
+
+
+        public List<PopularMovie> nestedPaginationList = new List<PopularMovie>();
+        public int nestedPage { get; set; } = 1;
+
+        public int nestedItemsPerPage { get; set; } = 5;
+        public async Task fillNestedPaginationList()
+        {
+            var startIndex = (nestedPage - 1) * nestedItemsPerPage;
+            var endIndex = startIndex + nestedItemsPerPage;
+
+
+            if (endIndex > popularData.Results.Count())
+            {
+                return;
+            }
+
+            nestedPaginationList.AddRange(popularData.Results.Skip(startIndex).Take(nestedItemsPerPage));
+            nestedPage++;
+        }
+
 
        
 

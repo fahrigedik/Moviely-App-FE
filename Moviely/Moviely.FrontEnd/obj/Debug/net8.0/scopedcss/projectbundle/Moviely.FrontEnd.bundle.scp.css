@@ -29,10 +29,18 @@
 .text-container[b-jqw3ygfm0j]{
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content:center;
+    align-items:center;
+    gap : 10px;
    
     
+}
+.image-container[b-jqw3ygfm0j]{
+    display:flex;
+    flex-direction : row;
+    justify-content:center;
+    align-items:center;
+    margin:10px
 }
 
 .mc-image[b-jqw3ygfm0j]{

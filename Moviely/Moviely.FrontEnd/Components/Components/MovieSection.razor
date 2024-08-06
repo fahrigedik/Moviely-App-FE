@@ -6,21 +6,25 @@
 
 @if (_movieService == null)
 {
-    <h1> Loading Data </h1>
+  
 }
 else {
 
     <div class="movie-container">
         @if (popularData == null)
         {
-            <h1>"Loading Popular Data"</h1>
+         <h1>Data Loading..</h1> 
         }
         else
         {
-            @foreach (var item in popularData.Results)
+
+            @foreach (var item in nestedPaginationList)
             {
                 <MovieCard PopularMovieData="item"></MovieCard>
             }
+                
+            
         }
+       
     </div>
 }

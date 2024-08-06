@@ -13,7 +13,12 @@ namespace Moviely.FrontEnd.Components.Components
         private IConfiguration Configuration { get; set; }
 
         public string BaseUrl { get; set; } = "https://api.themoviedb.org/3/trending/movie/day?language=en-US";
-        
+
+
+        private bool isInitialized = false;
+
        
+
+
     }
 }
