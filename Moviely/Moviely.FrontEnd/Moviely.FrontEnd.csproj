@@ -47,6 +47,10 @@
     <UpToDateCheckInput Remove="Components\Components\CommentCard.razor" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid" Version="8.0.7" />
+  </ItemGroup>
+
 
 	
 </Project>

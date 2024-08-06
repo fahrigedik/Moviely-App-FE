@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Moviely.FrontEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d1e4983e88e82a51a3ba1d5f1bdfcb3917ea1f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca89d625e417e1935ab32961f29beaa4e39b62d6")]
 [assembly: System.Reflection.AssemblyProductAttribute("Moviely.FrontEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Moviely.FrontEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

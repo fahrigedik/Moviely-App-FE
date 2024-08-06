@@ -1,6 +1,7 @@
 ﻿@using Moviely.FrontEnd.Services
 @rendermode InteractiveServer
 @attribute [StreamRendering(true)]
+@using Microsoft.AspNetCore.Components.QuickGrid
 
 
 
@@ -10,10 +11,10 @@
 }
 else {
 
-    <div class="movie-container">
+   <div class="movie-container" id="movie-container">
         @if (popularData == null)
         {
-         <h1>Data Loading..</h1> 
+            <h1>Data Loading..</h1>
         }
         else
         {
@@ -22,9 +23,13 @@ else {
             {
                 <MovieCard PopularMovieData="item"></MovieCard>
             }
-                
-            
+         
         }
-       
     </div>
+ 
+
+    <button class="btn btn-outline-primary" @onclick="BeforePage">Before Page</button>
+    <button class="btn btn-outline-primary" @onclick="nextPage">Next Page</button>
 }
+
+

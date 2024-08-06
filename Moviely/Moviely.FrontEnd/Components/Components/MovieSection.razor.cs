@@ -1,5 +1,6 @@
 ﻿using BlazorMovieLive.Models;
 using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 using Moviely.FrontEnd.Services;
 using System.Runtime.InteropServices;
 
@@ -13,6 +14,9 @@ namespace Moviely.FrontEnd.Components.Components
 
         [Inject]
         protected IMovieService _movieService { get; set; }
+
+        [Inject]
+        protected IJSRuntime jSRuntime { get; set; }  
 
         public PopularMoviePagedResponse popularData { get; set; }
 
@@ -33,11 +37,15 @@ namespace Moviely.FrontEnd.Components.Components
         }
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            popularData = await _movieService.GetPopularMoviesAsync();
             if (firstRender)
             {
+                popularData = await _movieService.GetPopularMoviesAsync();
                 await fillNestedPaginationList();
                 StateHasChanged(); // İlk render tamamlandıktan sonra durumu güncelleyin
+            }
+            else
+            {
+              //  await fillNestedPaginationList();
             }
         }
 
@@ -51,18 +59,50 @@ namespace Moviely.FrontEnd.Components.Components
             var startIndex = (nestedPage - 1) * nestedItemsPerPage;
             var endIndex = startIndex + nestedItemsPerPage;
 
-
             if (endIndex > popularData.Results.Count())
             {
                 return;
             }
 
             nestedPaginationList.AddRange(popularData.Results.Skip(startIndex).Take(nestedItemsPerPage));
+            StateHasChanged();
+
+            //nestedPage++;
+        }
+
+        public async Task nextPage()
+        {
+           
             nestedPage++;
+            nestedPaginationList.Clear();
+            StateHasChanged();
+            fillNestedPaginationList();
+            
+        }
+
+        public async Task BeforePage()
+        {
+            if (nestedPage!=1)
+            {
+                nestedPage--;
+                nestedPaginationList.Clear();
+                StateHasChanged();
+                fillNestedPaginationList();
+               
+            }
+        }
+
+       
+        public async Task ClearContent()
+        {
+            // JavaScript'te DOM'u temizleyen kod;
+            await jSRuntime.InvokeVoidAsync("ClearContent");
+            StateHasChanged();
+
         }
 
 
-       
+
 
     }
 }

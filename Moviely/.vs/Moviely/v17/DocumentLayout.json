@@ -7,10 +7,6 @@
       "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\components\\moviesection.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\components\\components\\moviecard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\components\\moviecard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\components\\components\\moviesection.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\components\\moviesection.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -19,12 +15,16 @@
       "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\components\\moviesection.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\models\\popularmovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\models\\popularmovie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\components\\components\\moviecard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\components\\moviecard.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|c:\\users\\fahri\\onedrive\\masa\u00FCst\u00FC\\blazor frontend movie app\\moviely-app-fe\\moviely\\moviely.frontend\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{17F29D2D-E600-4A77-8B77-C4873CB8E30D}|Moviely.FrontEnd\\Moviely.FrontEnd.csproj|solutionrelative:moviely.frontend\\components\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,52 +46,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "App.razor",
+              "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\App.razor",
+              "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\App.razor",
+              "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\App.razor",
+              "RelativeToolTip": "Moviely.FrontEnd\\Components\\App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-06T07:27:13.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "script.js",
+              "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\wwwroot\\js\\script.js",
+              "RelativeDocumentMoniker": "Moviely.FrontEnd\\wwwroot\\js\\script.js",
+              "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\wwwroot\\js\\script.js",
+              "RelativeToolTip": "Moviely.FrontEnd\\wwwroot\\js\\script.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-08-06T07:04:54.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MovieCard.razor.cs",
               "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieCard.razor.cs",
               "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\Components\\MovieCard.razor.cs",
               "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieCard.razor.cs",
               "RelativeToolTip": "Moviely.FrontEnd\\Components\\Components\\MovieCard.razor.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAUwBMAAAAHAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T03:57:33.487Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Home.razor",
-              "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Pages\\Home.razor",
-              "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\Pages\\Home.razor",
-              "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Pages\\Home.razor",
-              "RelativeToolTip": "Moviely.FrontEnd\\Components\\Pages\\Home.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-06T03:50:00.781Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PopularMovie.cs",
-              "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Models\\PopularMovie.cs",
-              "RelativeDocumentMoniker": "Moviely.FrontEnd\\Models\\PopularMovie.cs",
-              "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Models\\PopularMovie.cs",
-              "RelativeToolTip": "Moviely.FrontEnd\\Models\\PopularMovie.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T03:16:15.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "MovieSection.razor.css",
               "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.css",
               "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.css",
               "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.css",
               "RelativeToolTip": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-08-06T03:13:28.153Z",
               "EditorCaption": ""
@@ -104,20 +104,20 @@
               "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.cs",
               "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.cs",
               "RelativeToolTip": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAewCMAAABGAAAA",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAUwE4AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T03:01:24.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "MovieSection.razor",
               "DocumentMoniker": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieSection.razor",
               "RelativeDocumentMoniker": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor",
               "ToolTip": "C:\\Users\\fahri\\OneDrive\\Masa\u00FCst\u00FC\\Blazor FrontEnd Movie App\\Moviely-App-FE\\Moviely\\Moviely.FrontEnd\\Components\\Components\\MovieSection.razor",
               "RelativeToolTip": "Moviely.FrontEnd\\Components\\Components\\MovieSection.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAawBUAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-08-06T02:58:38.107Z",
               "EditorCaption": ""

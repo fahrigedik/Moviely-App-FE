@@ -34,3 +34,15 @@ C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Movi
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Components\MovieCard.razor.rz.scp.css
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Components\CommentCard.razor.rz.scp.css
 C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\scopedcss\Components\Components\CommentSection.razor.rz.scp.css
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\Moviely.FrontEnd.csproj.AssemblyReference.cache
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\fahri\OneDrive\Masaüstü\Blazor FrontEnd Movie App\Moviely-App-FE\Moviely\Moviely.FrontEnd\obj\Debug\net8.0\Moviely..43FD4E28.Up2Date
