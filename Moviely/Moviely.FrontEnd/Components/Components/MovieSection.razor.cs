@@ -14,31 +14,17 @@ namespace Moviely.FrontEnd.Components.Components
 
         [Inject]
         protected IMovieService _movieService { get; set; }
+        public MoviePagedResponse popularData { get; set; }
 
-        [Inject]
-        protected IJSRuntime jSRuntime { get; set; }  
+        
+        
 
-        public PopularMoviePagedResponse popularData { get; set; }
-
-        private async Task GetPopularData()
-        {
-        }       
-
-        public MovieSection()
-        {
-        }
-
-        protected override async Task OnInitializedAsync()
-        {
-           
-           // await fillNestedPaginationList();
-
-            
-        }
+        
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
             {
+                
                 popularData = await _movieService.GetPopularMoviesAsync();
                 await fillNestedPaginationList();
                 StateHasChanged(); // İlk render tamamlandıktan sonra durumu güncelleyin
@@ -69,7 +55,7 @@ namespace Moviely.FrontEnd.Components.Components
 
             //nestedPage++;
         }
-
+        
         public async Task nextPage()
         {
            
@@ -91,16 +77,6 @@ namespace Moviely.FrontEnd.Components.Components
                
             }
         }
-
-       
-        public async Task ClearContent()
-        {
-            // JavaScript'te DOM'u temizleyen kod;
-            await jSRuntime.InvokeVoidAsync("ClearContent");
-            StateHasChanged();
-
-        }
-
 
 
 

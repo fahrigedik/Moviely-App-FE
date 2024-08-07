@@ -2,7 +2,7 @@
 
 namespace BlazorMovieLive.Models
 {
-    public class PopularMoviePagedResponse
+    public class MoviePagedResponse
     {
         [JsonPropertyName("page")]
         public int Page { get; set; }

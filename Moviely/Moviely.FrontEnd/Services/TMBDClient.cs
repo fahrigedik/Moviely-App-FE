@@ -31,12 +31,12 @@ namespace Moviely.FrontEnd.Services
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
         }
-        public Task<PopularMoviePagedResponse?> GetPopularMoviesAsync(int page = 1)
+        public Task<MoviePagedResponse?> GetPopularMoviesAsync(int page = 1)
         {
             if (page < 1) page = 1;
             if (page > 500) page = 500;
 
-            return _httpClient.GetFromJsonAsync<PopularMoviePagedResponse>($"movie/popular?page={page}");
+            return _httpClient.GetFromJsonAsync<MoviePagedResponse>($"movie/popular?page={page}");
         }
 
         public Task<MovieDetails?> GetMovieDetailsAsync(int id)

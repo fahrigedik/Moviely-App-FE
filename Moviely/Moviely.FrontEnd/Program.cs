@@ -1,3 +1,4 @@
+using Moviely.FrontEnd.ApplicationState;
 using Moviely.FrontEnd.Components;
 using Moviely.FrontEnd.Services;
 
@@ -24,6 +25,7 @@ builder.Services.AddScoped(sp =>
 }); 
 builder.Services.AddTransient<TMBDClient>();
 builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<ApplicationState>();
 
 
 

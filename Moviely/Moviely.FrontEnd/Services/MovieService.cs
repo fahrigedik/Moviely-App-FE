@@ -21,17 +21,24 @@ namespace Moviely.FrontEnd.Services
 
         }
 
-        public Task<MovieDetails?> GetMovieDetailsAsync(int id)
+        public async Task<MovieDetails?> GetMovieDetailsAsync(int id)
         {
-                return _httpClient.GetFromJsonAsync<MovieDetails>($"movie/{id}");
+                return await _httpClient.GetFromJsonAsync<MovieDetails>($"movie/{id}");
         }
 
-        public Task<PopularMoviePagedResponse?> GetPopularMoviesAsync(int page = 1)
+        public async Task<MoviePagedResponse?> GetPopularMoviesAsync(int page = 1)
         {
             if (page < 1) page = 1;
             if (page > 500) page = 500;
+            return await _httpClient.GetFromJsonAsync<MoviePagedResponse>($"movie/popular?page={page}");
+        }
 
-            return _httpClient.GetFromJsonAsync<PopularMoviePagedResponse>($"movie/popular?page={page}");
+        public async Task<MoviePagedResponse> GetTopRatedMoviesAsync(int page = 1)
+        {
+            if (page < 1) page = 1;
+            if (page > 500) page = 500;
+            return await _httpClient.GetFromJsonAsync<MoviePagedResponse>($"movie/top_rated?page={page}");
+            
         }
     }
 }
