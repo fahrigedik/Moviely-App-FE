@@ -21,6 +21,9 @@ namespace Moviely.FrontEnd.Components.Components
         [Inject]
         public AppState ApplicationState { get; set; }
 
+        [Parameter]
+        public string apiDataType { get; set; }
+
 
        
 
@@ -34,13 +37,13 @@ namespace Moviely.FrontEnd.Components.Components
         {
             if (firstRender)
             {
-                if (ApplicationState.MovieSection =="Popular")
+                if (apiDataType == "Popular")
                 {
                     Data = await _movieService.GetPopularMoviesAsync();
                     await fillNestedPaginationList();
                     StateHasChanged();
                 }
-                if (ApplicationState.MovieSection=="TopRated")
+                if (apiDataType == "TopRated")
                 {
                     Data = await _movieService.GetTopRatedMoviesAsync();
                     await fillNestedPaginationList();

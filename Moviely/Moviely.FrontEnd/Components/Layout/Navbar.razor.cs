@@ -10,6 +10,13 @@ namespace Moviely.FrontEnd.Components.Layout
         [Inject]
         public AppState applicationState {  get; set; }
 
+
+        public void test()
+        {
+            StateHasChanged();
+            applicationState.MovieSection = "TopRated";
+        }
+
       
 
 
