@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
+builder.Services.AddScoped<AppState>();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped(sp =>
 {
@@ -25,7 +26,6 @@ builder.Services.AddScoped(sp =>
 }); 
 builder.Services.AddTransient<TMBDClient>();
 builder.Services.AddScoped<IMovieService, MovieService>();
-builder.Services.AddScoped<ApplicationState>();
 
 
 

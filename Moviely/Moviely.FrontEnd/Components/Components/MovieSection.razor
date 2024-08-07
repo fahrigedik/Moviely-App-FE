@@ -1,21 +1,19 @@
 ﻿@using Moviely.FrontEnd.Services
 @rendermode InteractiveServer
 @attribute [StreamRendering(true)]
-@using Microsoft.AspNetCore.Components.QuickGrid
 
 
 
-@if (_movieService == null)
+@if (_movieService == null )
 {
   
 }
 else {
 
-
     <div class="main-container">
         <button class="custom-btn btn-14" @onclick="BeforePage">Before</button>
         <div class="movie-container" id="movie-container">
-        @if (popularData == null)
+        @if (Data == null)
         {
             <h1>Data Loading..</h1>
         }

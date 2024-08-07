@@ -1,7 +1,9 @@
 ﻿using BlazorMovieLive.Models;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
+using Moviely.FrontEnd.ApplicationState;
 using Moviely.FrontEnd.Services;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 
 namespace Moviely.FrontEnd.Components.Components
@@ -14,20 +16,38 @@ namespace Moviely.FrontEnd.Components.Components
 
         [Inject]
         protected IMovieService _movieService { get; set; }
-        public MoviePagedResponse popularData { get; set; }
+        public MoviePagedResponse Data { get; set; }
 
-        
-        
+        [Inject]
+        public AppState ApplicationState { get; set; }
 
-        
+
+       
+
+        protected override async Task OnInitializedAsync()
+        {
+
+        }
+
+
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
             if (firstRender)
             {
+                if (ApplicationState.MovieSection =="Popular")
+                {
+                    Data = await _movieService.GetPopularMoviesAsync();
+                    await fillNestedPaginationList();
+                    StateHasChanged();
+                }
+                if (ApplicationState.MovieSection=="TopRated")
+                {
+                    Data = await _movieService.GetTopRatedMoviesAsync();
+                    await fillNestedPaginationList();
+                    StateHasChanged();
+                }
                 
-                popularData = await _movieService.GetPopularMoviesAsync();
-                await fillNestedPaginationList();
-                StateHasChanged(); // İlk render tamamlandıktan sonra durumu güncelleyin
+                // İlk render tamamlandıktan sonra durumu güncelleyin
             }
             else
             {
@@ -45,12 +65,12 @@ namespace Moviely.FrontEnd.Components.Components
             var startIndex = (nestedPage - 1) * nestedItemsPerPage;
             var endIndex = startIndex + nestedItemsPerPage;
 
-            if (endIndex > popularData.Results.Count())
+            if (endIndex > Data.Results.Count())
             {
                 return;
             }
 
-            nestedPaginationList.AddRange(popularData.Results.Skip(startIndex).Take(nestedItemsPerPage));
+            nestedPaginationList.AddRange(Data.Results.Skip(startIndex).Take(nestedItemsPerPage));
             StateHasChanged();
 
             //nestedPage++;
