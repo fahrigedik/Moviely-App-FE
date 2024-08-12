@@ -40,5 +40,12 @@ namespace Moviely.FrontEnd.Services
             return await _httpClient.GetFromJsonAsync<MoviePagedResponse>($"movie/top_rated?page={page}");
             
         }
+
+        public async Task<MoviePagedResponse> GetUpComingMovieAsync(int page = 1)
+        {
+            if (page < 1) page = 1;
+            if (page > 500) page = 500;
+            return await _httpClient.GetFromJsonAsync<MoviePagedResponse>($"movie/upcoming?page={page}");
+        }
     }
 }

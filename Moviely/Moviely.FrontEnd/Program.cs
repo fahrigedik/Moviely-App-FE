@@ -24,7 +24,6 @@ builder.Services.AddScoped(sp =>
     // Create the HttpClient instance with the validated base address
     return new HttpClient { BaseAddress = new Uri(baseAddress) };
 }); 
-builder.Services.AddTransient<TMBDClient>();
 builder.Services.AddScoped<IMovieService, MovieService>();
 
 

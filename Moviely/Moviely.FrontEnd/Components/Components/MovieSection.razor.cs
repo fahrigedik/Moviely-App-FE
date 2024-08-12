@@ -21,6 +21,8 @@ namespace Moviely.FrontEnd.Components.Components
         [Parameter]
         public string apiDataType { get; set; }
 
+        public int parentPage { get; set; } = 1;
+
 
         protected override async Task OnParametersSetAsync()
         {
@@ -28,22 +30,27 @@ namespace Moviely.FrontEnd.Components.Components
             if (apiDataType == "Popular")
             {
                 nestedPaginationList.Clear();
-                Data = await _movieService.GetPopularMoviesAsync();
-                await fillNestedPaginationList();
-                StateHasChanged();
+                Data = await _movieService.GetPopularMoviesAsync(parentPage);
+               
             }
             if (apiDataType == "TopRated")
             {
                 nestedPaginationList.Clear();
-                Data = await _movieService.GetTopRatedMoviesAsync();
-                await fillNestedPaginationList();
-                StateHasChanged();
+                Data = await _movieService.GetTopRatedMoviesAsync(parentPage);
             }
+            if (apiDataType == "upcoming")
+            {
+                nestedPaginationList.Clear();
+                Data = await _movieService.GetUpComingMovieAsync(parentPage);
+                
+            }
+            await fillNestedPaginationList();
+            StateHasChanged();
         }
 
 
         public List<PopularMovie> nestedPaginationList = new List<PopularMovie>();
-        public int nestedPage { get; set; } = 1;
+        public int nestedPage { get; set; }
 
         public int nestedItemsPerPage { get; set; } = 5;
         public async Task fillNestedPaginationList()
@@ -63,13 +70,18 @@ namespace Moviely.FrontEnd.Components.Components
         }
         
         public async Task nextPage()
-        {
-           
+        {  
             nestedPage++;
+            if (nestedPage == 5 )
+            {
+                parentPage++;
+                nestedPage = 1;
+                await OnParametersSetAsync();
+                return;
+            }
             nestedPaginationList.Clear();
-            StateHasChanged();
             fillNestedPaginationList();
-            
+            StateHasChanged();
         }
 
         public async Task BeforePage()
@@ -77,7 +89,6 @@ namespace Moviely.FrontEnd.Components.Components
             if (nestedPage!=1)
             {
                 nestedPage--;
-                nestedPaginationList.Clear();
                 StateHasChanged();
                 fillNestedPaginationList();
                

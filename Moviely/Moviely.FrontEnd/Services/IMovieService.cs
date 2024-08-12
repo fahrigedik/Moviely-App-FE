@@ -9,5 +9,7 @@ namespace Moviely.FrontEnd.Services
 
         public Task<MoviePagedResponse> GetTopRatedMoviesAsync(int page = 1);
 
+        public Task<MoviePagedResponse> GetUpComingMovieAsync(int page = 1);
+
     }
 }
