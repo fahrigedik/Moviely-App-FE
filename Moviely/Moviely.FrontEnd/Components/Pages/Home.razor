@@ -3,8 +3,8 @@
 
 <PageTitle>Home</PageTitle>
 
-<Navbar></Navbar>
+<Navbar OnMenuItemClicked="UpdateApiDataType"></Navbar>
 <div class="home-container">
-    <MovieSection apiDataType="Popular"></MovieSection>
+    <MovieSection apiDataType="@apiDataType"></MovieSection>
 </div>
 

@@ -7,17 +7,19 @@ namespace Moviely.FrontEnd.Components.Layout
     public partial class Navbar
     {
 
-        [Inject]
-        public AppState applicationState {  get; set; }
 
+        [Parameter]
+        public EventCallback<string> OnMenuItemClicked { get; set; }
 
-        public void test()
+        private async Task HandleMenuItemClick(string menuItem)
         {
-            StateHasChanged();
-            applicationState.MovieSection = "TopRated";
+            if (OnMenuItemClicked.HasDelegate)
+            {
+                await OnMenuItemClicked.InvokeAsync(menuItem);
+            }
         }
 
-      
+
 
 
 

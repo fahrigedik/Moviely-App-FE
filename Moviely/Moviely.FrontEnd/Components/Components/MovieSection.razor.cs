@@ -18,43 +18,26 @@ namespace Moviely.FrontEnd.Components.Components
         protected IMovieService _movieService { get; set; }
         public MoviePagedResponse Data { get; set; }
 
-        [Inject]
-        public AppState ApplicationState { get; set; }
-
         [Parameter]
         public string apiDataType { get; set; }
 
 
-       
-
-        protected override async Task OnInitializedAsync()
+        protected override async Task OnParametersSetAsync()
         {
 
-        }
-
-
-        protected override async Task OnAfterRenderAsync(bool firstRender)
-        {
-            if (firstRender)
+            if (apiDataType == "Popular")
             {
-                if (apiDataType == "Popular")
-                {
-                    Data = await _movieService.GetPopularMoviesAsync();
-                    await fillNestedPaginationList();
-                    StateHasChanged();
-                }
-                if (apiDataType == "TopRated")
-                {
-                    Data = await _movieService.GetTopRatedMoviesAsync();
-                    await fillNestedPaginationList();
-                    StateHasChanged();
-                }
-                
-                // İlk render tamamlandıktan sonra durumu güncelleyin
+                nestedPaginationList.Clear();
+                Data = await _movieService.GetPopularMoviesAsync();
+                await fillNestedPaginationList();
+                StateHasChanged();
             }
-            else
+            if (apiDataType == "TopRated")
             {
-              //  await fillNestedPaginationList();
+                nestedPaginationList.Clear();
+                Data = await _movieService.GetTopRatedMoviesAsync();
+                await fillNestedPaginationList();
+                StateHasChanged();
             }
         }
 
