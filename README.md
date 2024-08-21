@@ -1,7 +1,9 @@
 🎬 Movie App - TMDB API & Custom Backend Integration
+
 This project is a dynamic movie application where I fetch movie data directly from the TMDB API. For user reviews and comments, I've developed a custom backend that seamlessly integrates with the front end.
 
 🔧 Technologies Used
+
 Blazor: For building a rich, interactive web UI.
 
 .NET Core: Powering the backend with a robust and scalable framework.
