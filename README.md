@@ -3,8 +3,11 @@ This project is a dynamic movie application where I fetch movie data directly fr
 
 🔧 Technologies Used
 Blazor: For building a rich, interactive web UI.
+
 .NET Core: Powering the backend with a robust and scalable framework.
+
 AutoMapper: For easy object-to-object mapping, ensuring clean and maintainable code.
+
 Blazor Interactive Server: Enabling server-side Blazor to handle real-time updates and interactions.
 
 Feel free to explore the code, and don't hesitate to reach out if you have any questions or suggestions!
